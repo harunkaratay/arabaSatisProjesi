@@ -29,7 +29,7 @@ return new class extends Migration
 
 
             $table->timestamps();
-            $tabla->softDeletes()->nullable();
+            $table->softDeletes()->nullable();
 
 
 
