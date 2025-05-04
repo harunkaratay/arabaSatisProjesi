@@ -15,3 +15,12 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+
+
+
+
+//test route
+Route::get('/panel/template', function () {
+    return view('panel.layout.app');
+});
