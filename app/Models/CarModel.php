@@ -14,4 +14,5 @@ class CarModel extends Model
     public function getBrand() {
         return $this->belongsTo(CarBrand::class, 'brand_id', 'id');
     }
+
 }
