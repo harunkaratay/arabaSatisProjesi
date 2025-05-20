@@ -143,13 +143,24 @@
                     <form id="formAuthentication" class="mb-3" action="{{ route('register') }}" method="POST">
                         @csrf
                         <div class="mb-3">
-                            <label for="username" class="form-label">Kullanıcı Adı</label>
+                            <label for="username" class="form-label">Adınız</label>
                             <input
                                 type="text"
                                 class="form-control"
                                 id="username"
                                 name="name"
-                                placeholder="Kullanıcı adı giriniz"
+                                placeholder="Adınızı giriniz"
+                                autofocus
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label for="surName" class="form-label">Soyadınız</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="surName"
+                                name="surname"
+                                placeholder="Soyadınızı giriniz"
                                 autofocus
                             />
                         </div>
